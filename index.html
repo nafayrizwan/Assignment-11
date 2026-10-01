@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+  body{
+    margin: 0;
+  }
+.sidebar{
+
+  width: 240px;
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.sidebar:hover{
+  overflow-y: auto;
+}
+.sidebar img{
+  height: 25px;
+  width: 90px;
+}
+.sidebar div{
+  padding: 12px;
+  cursor: pointer;
+}
+.sidebar hr{
+  border: 0;
+  border-top: 1px solid #c4c2c2;
+}
+.top{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.top i{
+  cursor: pointer
+}
+.sidebar i{
+  margin-right: 15px;
+}
+.sidebar h3{
+  padding: 10px;
+  margin: 0;
+}
+.sidebar .item:hover{
+  background-color: #f2f2f2;
+}
+.sidebar .item:hover i{
+  color: red;
+}
+header{
+  position: relative;
+  margin-left: 240px;
+  margin-top: 5px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+header i{
+  cursor: pointer;
+}
+.center{
+  display: flex;
+  width: 600px;
+}
+.center input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.center button{
+  width: 50px;
+  background-color: white;
+   border: 1px solid #ccc;
+   border-left: none;
+   cursor:pointer;
+}
+#mic{
+  display: flex;
+  align-items: center;
+ font-size: 20px;
+ margin-left: 15px;
+}
+.right{
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.cr{
+  padding: 5px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.acc{
+  padding: 5px;
+border-radius: 50%;
+background-color: rgb(115, 176, 233);
+border: none;
+cursor: pointer;
+
+}
+.center input:focus{
+  outline: none;
+  border: 1px solid rgb(26, 113, 148);
+}
+.h{
+  margin-left: 260px;
+  border: 0;
+  border-top: 1px solid #c4c2c2;
+}
+.buttons{
+  margin-left: 240px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+.buttons button{
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.b1{
+  background-color: black;
+  color: white;
+}
+.r{
+  margin-left: 260px;
+    border: 0;
+  border-top: 1px solid #c4c2c2;
+}
+.videos{
+  flex-wrap: wrap;
+  margin-left: 250px;
+  display: flex;
+  gap: 20px;
+
+}
+.videocard{
+  width: 340px;
+}
+.videocard a{
+  text-decoration: none;
+  color: black;
+}
+.videocard img{
+  width: 100%;
+}
+.videocard p{
+  color: black;
+  margin: 0px; 
+}
+#info{
+  margin: 0;
+  color:#606060;
+}
+
+</style>
+</head>
+<body>
+   <header>
+  <div class="center">
+  <input type="text" placeholder="Search">
+  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  <i id="mic" class="fa-solid fa-microphone"></i>
+  </div>
+  <div class="right">
+    <button class="cr"><i class="fa-solid fa-plus"></i>Create</button>
+<i class="fa-solid fa-bell"></i>
+<button class="acc">N</button>
+  </div>
+   </header>
+   <hr class="h">
+   <div class="buttons">
+   <button class="b1">All</button>
+   <button>Music</button>
+   <button>User interface design</button>
+   <button>Bollywood</button>
+   <button>Graphic design</button>
+   <button>Website</button>
+   <button>Computer Science</button>
+   <button>Contemporary</button>
+   <button>Web Development</button>
+   <button>Podcasts</button>
+   </div>
+   <hr class="r">
+<aside class="sidebar">
+  <div class="top">
+  <i class="fa-solid fa-bars"></i>
+<a href="https://www.youtube.com">
+  <img src="images/yt.png" alt="YouTube">
+</a>
+</div> 
+    <div class="item"><i class="fa-solid fa-house"></i>Home</div>
+    <div class="item"><i class="fa-solid fa-compass"></i>Explore</div>
+    <div class="item"><i class="fa-solid fa-user-plus"></i>Subscriptions</div>
+
+    <hr>
+
+    <div class="item"><i class="fa-brands fa-square-youtube"></i>Library</div>
+    <div class="item"><i class="fa-solid fa-clock-rotate-left"></i>History</div>
+    <div class="item"><i class="fa-solid fa-square-caret-right"></i>Your videos</div>
+    <div class="item"><i class="fa-solid fa-clock"></i>Watch later</div>
+    <div class="item"><i class="fa-solid fa-thumbs-up"></i>Liked videos</div>
+
+    <hr>
+
+    <h3>Subscriptions</h3>
+
+    <div class="item"><i class="fa-solid fa-music"></i>Music</div>
+    <div class="item"><i class="fa-solid fa-trophy"></i>Sports</div>
+    <div class="item"><i class="fa-solid fa-gamepad"></i>Gaming</div>
+    <div class="item"><i class="fa-solid fa-newspaper"></i>News</div>
+
+</aside>
+
+<div class="videos">
+<div class="videocard">
+<a href="https://www.youtube.com/watch?v=3NYgcQFhZCI" target="_blank">
+  <img src="https://img.youtube.com/vi/3NYgcQFhZCI/maxresdefault.jpg" alt="Video">
+<p><b>How to Rewire Your Brain to Enjoy Discipline(Dopamine Detox Explained)</b></p>
+<p id="info">Dan Zakaria <br>
+1.2M views • 2 years ago</p>
+</a>
+</div>
+
+<div class="videocard">
+<a href="https://www.youtube.com/watch?v=TsBIeytmsjA" target="_blank">
+    <img src="https://img.youtube.com/vi/TsBIeytmsjA/maxresdefault.jpg" class="thumbnail">
+  <p><b>5 Things To Do Instead Of Wasting Your Evenings</b></p>
+  <p id="info">Sandeep Swadia <br>
+  1.5M views • 5 years ago</p>
+  </a>
+</div>
+
+
+<div class="videocard">
+ <a href="https://www.youtube.com/watch?v=d5Wv8jARwiw" target="_blank">
+    <img src="https://img.youtube.com/vi/d5Wv8jARwiw/maxresdefault.jpg" alt="YouTube video">
+<p><b>Kami (Official Visualizer)-Samar Jafri</b></p>
+<p id="info">Samar Jafri <br>
+3.2M views • 1 years ago
+</p>
+</a>
+</div>
+
+
+
+<div class="videocard">
+  <a href="https://www.youtube.com/watch?v=sUWYgBHV6A8" target="_blank">
+    <img src="https://img.youtube.com/vi/sUWYgBHV6A8/maxresdefault.jpg" alt="YouTube video">
+<p><b>Aesa tasal wala match apne kabhe nhe dekha hoga!!</b></p>
+<p id="info" >Adeel Vlogs
+  <br>
+  100k views • 2 months ago
+</p>
+</a>
+</div>
+
+
+
+<div class="videocard">
+  <a href="https://www.youtube.com/watch?v=jGhobd9nGoU" target="_blank">
+    <img src="https://img.youtube.com/vi/jGhobd9nGoU/maxresdefault.jpg" alt="YouTube video">
+    <p>
+      <b>If you are not motivated, do this.</b>
+    </p>
+    <p id="info">Russel Wofford<br>
+      2.1M views • 1 years ago
+    </p>
+</a>
+</div>
+
+<div class="videocard">
+  <a href="https://www.youtube.com/watch?v=CNsvts6pVzo" target="_blank">
+    <img src="https://img.youtube.com/vi/CNsvts6pVzo/maxresdefault.jpg" alt="YouTube video">
+    <p><b>How I code profittable apps solo with AI</b></p>
+    <p id="info">Admund Yong<br>
+ 2.5M views • 1 years ago
+    </p>
+</a>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
